@@ -13,9 +13,18 @@ In **3_9 DNA methylation during Parhyale embryogensis.nb.html** are the files an
 - Definition of threshold to define methylated genes
 - Integratation of expression and methylation data to explore potential relationships between expigenetic and transcriptional states
 - Estimate statistical differences between developmenatl genes based on  their methylation state.
-- 
 
+in **3_10 Impact of DNA methylation loss on Parhyale embryogenesis.nb.html** are the files and scripts used to analyse the impact of DNA methyaltion loss on embryo development. Expression changes weere analysed on embryos treated with the methylation inhibitor 5-aza-2'-deoxycytidine (5-AzadC). The analyses performed include:
 
+- Analysis of embryo surival rates under different conditions
+- Expression quantification of 5AZA-treated embryos using FeatureCounts R funciotn (https://www.rdocumentation.org/packages/Rsubread/versions/1.22.2/topics/featureCounts)
+- PAC analysis of wild-type and treated embryos
+- Differential gene expression (DGE) analysis. Used DESeq2 library to call statistically significant differentially expressed genes, setting were padj < 0.01 and |log10FC| > 1.
+- Cluster of expression using genes differentially expressed
+- Catgeorisation of genes affected by drug treatment based on developmental categories like matnerla, zygotic and maternal-zygotic.
+- Visualisation of results was performed using *pheatmap*, *ggplot* , *ggbreak*, *ggarrange* R packages, among others.
+- Gene ontology analysis using *topGO* R package (https://bioconductor.org/packages/release/bioc/html/topGO.html)
+  
 Please email *alexjapes@gmail.com* if there is any problem, thanks! (Manuel)
 
 [This](https://htmlpreview.github.io/) is a tool to view the html files. 
